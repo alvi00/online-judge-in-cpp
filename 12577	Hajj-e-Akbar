@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+
+
+    char s[100];
+    cin>>s;
+
+    for(int t=1;s[0]!='*';t++,cin>>s)
+    {
+        if(s[0]=='H')
+        {
+            printf("Case %d: Hajj-e-Akbar\n", t);
+        }
+        else
+        {
+            printf("Case %d: Hajj-e-Asghar\n", t);
+        }
+    }
+return 0;
+}
