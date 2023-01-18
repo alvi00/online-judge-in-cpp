@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    double a,b,c,pi;
+    while(scanf("%lf%lf%lf",&a,&b,&c)==3)
+    {
+    pi=acos(-1);
+    double s=(a+b+c)/2;
+    double aot=sqrt(s*((s-a)*(s-b)*(s-c)));
+    double rooc=a*b*c/sqrt(2*s*(b+c-a)*(c+a-b)*(a+b-c));
+    double aooc=pi*rooc*rooc;
+    double roic=aot/s;
+    double aoic=pi*roic*roic;
+    double ans_inn_cir=aoic;
+    double ans_triangle=aot-aoic;
+    double ans_out_cir=aooc-(aot);
+    cout<<fixed<<setprecision(4)<<ans_out_cir<<" "<<ans_triangle<<" "<<ans_inn_cir<<endl;
+    }
+    return 0;
+}
